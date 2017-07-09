@@ -46,5 +46,15 @@ activity_labels <- read.csv("activity_labels.txt", header=F, sep="")
 colnames(activity_labels) <- c("Activity.ID", "Activity.Label")
 data <- merge(data, activity_labels)
 
+# Use descriptive names for variables
+colnames(data) <- sub("(.*)Acc(.*)", "\\1.Accelerometer\\2", colnames(data))
+colnames(data) <- sub("(.*)Gyro(.*)", "\\1.Gyroscope\\2", colnames(data))
+colnames(data) <- sub("(.*)Jerk(.*)", "\\1.Jerk\\2", colnames(data))
+colnames(data) <- sub("(.*)Mag(.*)", "\\1.Magnitude\\2", colnames(data))
+colnames(data) <- sub("^f(.*)", "\\1.Freq", colnames(data))
+colnames(data) <- sub("^t(.*)", "\\1", colnames(data))
+colnames(data) <- sub("(.*)-mean\\(\\)(.*)", "\\1.Mean\\2", colnames(data))
+colnames(data) <- sub("(.*)-std\\(\\)(.*)", "\\1.Std\\2", colnames(data))
+
 # Take the user back to its original dir
 setwd("..")
