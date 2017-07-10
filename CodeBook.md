@@ -65,7 +65,7 @@ The average body acceleration Euclidean norm, measured via the accelerometer.
 ### Gravity.Accelerometer.Magnitude.Mean
 The average gravity acceleration Euclidean norm, measured via the accelerometer.
 
-## Body.Accelerometer.Jerk.Magnitude.Mean
+### Body.Accelerometer.Jerk.Magnitude.Mean
 The average body acceleration jerk Euclidean norm, measured via the accelerometer.
 
 ### Body.Gyroscope.Magnitude.Mean
@@ -75,49 +75,140 @@ The average gravity acceleration Euclidean norm, measured via the gyroscope.
 The average gravity acceleration jerk Euclidean norm, measured via the gyroscope.
 
 ### Body.Accelerometer.Mean.X.Freq
+FFT transformation of the average body acceleration in the X-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Mean.Y.Freq
+FFT transformation of the average body acceleration in the Y-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Mean.Z.Freq
+FFT transformation of the average body acceleration in the Z-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Jerk.Mean.X.Freq
+FFT transformation of the average jerk body acceleration in the X-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Jerk.Mean.Y.Freq
+FFT transformation of the average jerk body acceleration in the Y-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Jerk.Mean.Z.Freq
+FFT transformation of the average jerk body acceleration in the Z-axis, measured via the accelerometer.
+
 ### Body.Gyroscope.Mean.X.Freq
+FFT transformation of the average body acceleration in the X-axis, measured via the gyroscope.
+
 ### Body.Gyroscope.Mean.Y.Freq
+FFT transformation of the average body acceleration in the Y-axis, measured via the gyroscope.
+
 ### Body.Gyroscope.Mean.Z.Freq
+FFT transformation of the average body acceleration in the Z-axis, measured via the gyroscope.
+
 ### Body.Accelerometer.Magnitude.Mean.Freq
+FFT transformation of the average body acceleration Euclidean norm, measured via the accelerometer.
+
 ### BodyBody.Accelerometer.Jerk.Magnitude.Mean.Freq
+FFT transformation of the average body acceleration jerk Euclidean norm, measured via the accelerometer.
+
 ### BodyBody.Gyroscope.Magnitude.Mean.Freq
+FFT transformation of the average body acceleration Euclidean norm, measured via the gyroscope.
+
 ### BodyBody.Gyroscope.Jerk.Magnitude.Mean.Freq
+FFT transformation of the average body acceleration jerk Euclidean norm, measured via the gyroscope.
+
 ### Body.Accelerometer.Std.X
+The std. deviation of the body acceleration in the X-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Std.Y
+The std. deviation of the body acceleration in the Y-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Std.Z
+The std. deviation of the body acceleration in the Z-axis, measured via the accelerometer.
+
 ### Gravity.Accelerometer.Std.X
+The std. deviation of the gravity acceleration in the X-axis, measured via the gyroscope.
+
 ### Gravity.Accelerometer.Std.Y
+The std. deviation of the gravity acceleration in the Y-axis, measured via the gyroscope.
+
 ### Gravity.Accelerometer.Std.Z
+The std. deviation of the gravity acceleration in the Z-axis, measured via the gyroscope.
+
 ### Body.Accelerometer.Jerk.Std.X
+The std. deviation of the body acceleration jerk in the X-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Jerk.Std.Y
+The std. deviation of the body acceleration jerk in the Y-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Jerk.Std.Z
+The std. deviation of the body acceleration jerk in the Z-axis, measured via the accelerometer.
+
 ### Body.Gyroscope.Std.X
+The std. deviation of the body acceleration in the X-axis, measured via the gyroscope.
+
 ### Body.Gyroscope.Std.Y
+The std. deviation of the body acceleration in the Y-axis, measured via the gyroscope.
+
 ### Body.Gyroscope.Std.Z
+The std. deviation of the body acceleration in the Z-axis, measured via the gyroscope.
+
 ### Body.Gyroscope.Jerk.Std.X
+The std. deviation of the body acceleration jerk in the X-axis, measured via the gyroscope.
+
 ### Body.Gyroscope.Jerk.Std.Y
+The std. deviation of the body acceleration jerk in the Y-axis, measured via the gyroscope.
+
 ### Body.Gyroscope.Jerk.Std.Z
+The std. deviation of the body acceleration jerk in the Z-axis, measured via the gyroscope.
+
 ### Body.Accelerometer.Magnitude.Std
+The std. deviation of the body acceleration Euclidean norm, measured via the accelerometer.
+
 ### Gravity.Accelerometer.Magnitude.Std
+The std. deviation of the gravity acceleration Euclidean norm, measured via the accelerometer.
+
 ### Body.Accelerometer.Jerk.Magnitude.Std
+The std. deviation of the body acceleration jerk Euclidean norm, measured via the accelerometer.
+
 ### Body.Gyroscope.Magnitude.Std
+The std. deviation of the body acceleration Euclidean norm, measured via the gyroscope.
+
 ### Body.Gyroscope.Jerk.Magnitude.Std
+The std. deviation of the body acceleration jerk Euclidean norm, measured via the gyroscope.
+
 ### Body.Accelerometer.Std.X.Freq
+FFT transform of the std. deviation of the body acceleration in the X-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Std.Y.Freq
+FFT transform of the std. deviation of the body acceleration in the Y-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Std.Z.Freq
+FFT transform of the std. deviation of the body acceleration in the Z-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Jerk.Std.X.Freq
+FFT transform of the std. deviation of the body acceleration jerk in the X-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Jerk.Std.Y.Freq
+FFT transform of the std. deviation of the body acceleration jerk in the Y-axis, measured via the accelerometer.
+
 ### Body.Accelerometer.Jerk.Std.Z.Freq
+FFT transform of the std. deviation of the body acceleration jerk in the Z-axis, measured via the accelerometer.
+
 ### Body.Gyroscope.Std.X.Freq
+FFT transform of the std. deviation of the body acceleration in the X-axis, measured via the gyroscope.
+
 ### Body.Gyroscope.Std.Y.Freq
+FFT transform of the std. deviation of the body acceleration in the Y-axis, measured via the gyroscope.
+
 ### Body.Gyroscope.Std.Z.Freq
+FFT transform of the std. deviation of the body acceleration in the Z-axis, measured via the gyroscope.
+
 ### Body.Accelerometer.Magnitude.Std.Freq
+FFT transform of the std. deviation of the body acceleration Euclidean norm, measured via the accelerometer.
+
 ### BodyBody.Accelerometer.Jerk.Magnitude.Std.Freq
+FFT transform of the std. deviation of the body acceleration jerk Euclidean norm, measured via the accelerometer.
+
 ### BodyBody.Gyroscope.Magnitude.Std.Freq
+FFT transform of the std. deviation of the body acceleration Euclidean norm, measured via the gyroscope.
+
 ### BodyBody.Gyroscope.Jerk.Magnitude.Std.Freq
+FFT transform of the std. deviation of the body acceleration jerk Euclidean norm, measured via the gyroscope.
 
