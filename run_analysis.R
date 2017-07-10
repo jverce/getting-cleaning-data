@@ -1,16 +1,22 @@
+# Check if Samsung data is present already.
+# If not, download it first.
+
+dataset_dir <- "UCI HAR Dataset"
+if (!file.exists(dataset_dir)) {
 # Download data file
-fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl, destfile="dataset.zip", method="curl")
+    fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+    download.file(fileUrl, destfile="dataset.zip", method="curl")
 
 # Unzip data file
-unzip("dataset.zip")
+    unzip("dataset.zip")
 
 # Remove unnecessary file
-file.remove("dataset.zip")
+    file.remove("dataset.zip")
+}
 
 
 # Go into the dataset dir to start processing it
-setwd("./UCI HAR Dataset")
+setwd(dataset_dir)
 
 
 # Load headers
