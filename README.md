@@ -19,4 +19,4 @@ This will produce the following:
 2. Cleanup the input data set.
 3. Generate a new tidy data set grouped by subject ID and activity, and
 calculating the average of the rest of the variables provided.
-4. Output the new tidy data set into it's own file, named `tidy.csv`.
+4. Output the new tidy data set into it's own file, named `tidy.txt`.

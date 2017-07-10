@@ -64,4 +64,4 @@ tidy_data <- aggregate(. ~ Activity.Label + Subject.ID, data, FUN=mean)
 # Take the user back to its original dir and store
 # the tidy data into its own file.
 setwd("..")
-write.csv(tidy_data, file="tidy.csv")
+write.table(tidy_data, file="tidy.txt", row.name=F)
