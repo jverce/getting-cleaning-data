@@ -20,14 +20,14 @@ headers <- as.character(headers[, 2])
 # Load test data
 test_activity_ids <- read.csv("test/y_test.txt", header=F, sep="")
 test_subject_ids <- read.csv("test/subject_test.txt", header=F, sep="")
-test_data <- read.csv("test/X_test.txt", header=F, sep="")
+test_data <- read.csv("test/X_test.txt", header=F, sep="", stringsAsFactors=F)
 # Merge all test data
 test_data <- cbind(test_activity_ids, test_subject_ids, test_data)
 
 # Load training data
 train_activity_ids <- read.csv("train/y_train.txt", header=F, sep="")
 train_subject_ids <- read.csv("train/subject_train.txt", header=F, sep="")
-train_data <- read.csv("train/X_train.txt", header=F, sep="")
+train_data <- read.csv("train/X_train.txt", header=F, sep="", stringsAsFactors=F)
 # Merge all training data
 train_data <- cbind(train_activity_ids, train_subject_ids, train_data)
 
@@ -55,6 +55,13 @@ colnames(data) <- sub("^f(.*)", "\\1.Freq", colnames(data))
 colnames(data) <- sub("^t(.*)", "\\1", colnames(data))
 colnames(data) <- sub("(.*)-mean\\(\\)(.*)", "\\1.Mean\\2", colnames(data))
 colnames(data) <- sub("(.*)-std\\(\\)(.*)", "\\1.Std\\2", colnames(data))
+colnames(data) <- gsub("-", ".", colnames(data))
 
-# Take the user back to its original dir
+
+# Create tidy dataset
+tidy_data <- aggregate(. ~ Activity.Label + Subject.ID, data, FUN=mean)
+
+# Take the user back to its original dir and store
+# the tidy data into its own file.
 setwd("..")
+write.csv(tidy_data, file="tidy.csv")
