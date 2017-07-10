@@ -14,6 +14,18 @@ grouping it by activity (i.e. `Activity.Label`) and subject (i.e.
 
 ## Variables
 
+### Activity.ID Activity.Label
+The different activities performed by the subjects:
+- 1 WALKING
+- 2 WALKING_UPSTAIRS
+- 3 WALKING_DOWNSTAIRS
+- 4 SITTING
+- 5 STANDING
+- 6 LAYING
+
+### Subject.ID
+The unique identifier for each subject.
+
 ### Body.Accelerometer.Mean.X
 The average body acceleration in the X-axis, measured via the accelerometer.
 
